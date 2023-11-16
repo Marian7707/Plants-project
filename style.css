@@ -3,154 +3,175 @@
 }
 
 .header-top {
-  background-color: #00730C;
+  padding: 17px 190px 17px 190px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.icon-header-top-1 {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
-}
-
-.icon-header-top-2 {
-  color: white;
-  font-family: "Nunito", sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-right: 20px;
-}
-.icon-header-top-2 img {
-  margin-bottom: 3px;
-  margin-left: 5px;
-}
-
-.header-bottom {
-  align-items: center;
-  display: flex;
-  gap: 140px;
-}
-.header-bottom .logo {
-  margin: 15px;
-}
-.header-bottom .phone-icon {
-  background-image: url(./images/phone.svg);
-  padding: 20px 25px 20px 25px;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  background-color: #00730C;
-  border-radius: 15px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu img {
-  position: relative;
-  left: 60px;
-}
-
-.front-image {
-  display: flex;
-  justify-content: center;
-}
-.front-image img {
-  width: 100%;
-}
-
-.content-page {
-  background-color: #abe8c2;
-  padding-top: 2rem;
-  padding-left: 12px;
-  height: 720px;
-}
-.content-page .text-1 {
-  font-family: Nunito;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.content-page .text-2 {
-  font-family: Nunito;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.content-page .color-text {
-  color: #00730C;
-}
-.content-page .text-3 {
-  padding-bottom: 25px;
-  font-family: Nunito;
+  background-color: #0C4B35;
+  color: var(--main-bg-white-color, #FFF);
+  /* Card / Paragraph Font */
+  font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 25px; /* 178.571% */
+}
+.header-top div {
+  display: flex;
+  margin-left: 30px;
+}
+.header-top .header-contact {
+  max-width: 1410px;
+  display: flex;
+}
+.header-top .header-lang {
+  align-items: center;
+  display: flex;
+}
+.header-top .header-lang p {
+  margin-right: 5px;
 }
 
-.front-button {
-  color: var(--typography-font-white-color, #FFF);
-  /* Button Font/Button Text */
+.header-botton {
+  color: var(--typography-heading-color, #212529);
+  /* Button/Button Text */
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px; /* 125% */
   text-transform: capitalize;
+  margin: 15px 256px 15px 256px;
+  justify-content: space-between;
+  display: flex;
+  max-width: 100vw;
+}
+.header-botton .menu {
+  display: flex;
+  gap: 101px;
+}
+.header-botton .menu ul {
+  display: flex;
+  gap: 55px;
+}
+.header-botton .menu ul li {
+  list-style: none;
+}
+.header-botton .button-header-call {
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
   background-color: #00730C;
-  width: 303px;
-  height: 44px;
-  left: 2.3rem;
-  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.header-botton .button-header-call img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.header-botton p {
+  color: #FFF;
 }
 
-.front-more {
-  padding-bottom: 40px;
-  padding-top: 20px;
+.main-block {
+  justify-content: center;
+  display: flex;
+  background: var(--main-gradient-1-color, linear-gradient(80deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%));
+  display: flex;
+  height: 719px;
+}
+.main-block .small-front-img {
+  position: relative;
+  top: 348px;
+}
+.main-block .front-content {
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-left: 20px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.main-block .front-content .text-1 {
+  color: var(--typography-heading-font-color, #212529);
+  /* Button/Button Text */
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: capitalize;
+}
+.main-block .front-content .text-2 {
+  color: var(--typography-heading-font-color, #212529);
+  /* H2/Extra Bold */
+  font-family: Nunito;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.main-block .front-content .text-2 span {
+  color: #00730C;
+}
+.main-block .front-content p {
+  color: var(--typography-paragraph-color, #676767);
+  /* H6/Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.main-block .front-content .button-front {
+  display: flex;
+  align-items: center;
+}
+.main-block .front-content .button-front button {
+  color: var(--typography-font-white-color, #FFF);
+  /* Button/Button Text */
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  text-transform: capitalize;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00730C;
+  width: 175px;
+  height: 50px;
+}
+.main-block .front-content .img-arrow {
+  margin-left: 15px;
+}
+.main-block .front-content .statistics {
+  color: var(--typography-heading-font-color, #212529);
+  font-family: Nunito;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+.main-block .front-content .statistics div {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
   justify-content: center;
   align-items: center;
   display: flex;
-  color: var(--main-1-color, #00730C);
-  /* Mobile Font / H6 / Semibold */
-  font-family: Nunito;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  border-radius: 35px;
+  background: linear-gradient(73deg, #00730C -83.5%, #F9F9F9 93.84%);
 }
-.front-more img {
-  padding-left: 10px;
-}
-
-.statistics {
-  justify-content: center;
-  display: flex;
-}
-.statistics .statistics-1 {
-  margin: 10px;
-  border: none;
-  border-radius: 32px;
-  background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
-  width: 133;
-  height: 32px;
-}
-.statistics p {
+.main-block .front-content .statistics p {
+  margin-right: 30px;
   color: var(--typography-heading-font-color, #212529);
-  font-feature-settings: "clig" off, "liga" off;
-  /* Mobile Font / Body Small / Regular */
   font-family: Nunito;
-  font-size: 10px;
+  font-size: 15px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
 }/*# sourceMappingURL=style.css.map */
